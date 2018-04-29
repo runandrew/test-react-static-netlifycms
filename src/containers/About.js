@@ -1,10 +1,12 @@
-
-import React from 'react'
+import React from "react";
+import { withRouteData } from "react-static";
+import Markdown from "react-markdown";
 //
 
-export default () => (
-  <div>
-    <h1>This is what we're all about.</h1>
-    <p>React, static sites, performance, speed. It's the stuff that makes us tick.</p>
-  </div>
-)
+export default withRouteData(({ about }) => {
+  return (
+    <div>
+      <Markdown source={about.content} escapeHtml={false} />
+    </div>
+  );
+});
