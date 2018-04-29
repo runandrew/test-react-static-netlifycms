@@ -66,7 +66,6 @@ export default {
   getRoutes: async () => {
     const posts = await getPosts();
     const about = await getAbout();
-    console.log("this is about", about);
     return [
       {
         path: "/",
