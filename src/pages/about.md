@@ -5,10 +5,8 @@ date: 2018-02-19T00:45:43.212Z
 thumbnail: /uploads/image.jpg
 rating: '5'
 ---
-# This is the about page!!!!!
+# Changed About
 
-* Bullet 1
-* 2
+## This markdown really works!
 
-1. one
-2. two 
+[link](google.com)
